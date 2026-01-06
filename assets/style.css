@@ -41,3 +41,107 @@ hr{border:0;border-top:1px solid var(--line);margin:14px 0}
 .footer{margin:18px 0 0 0;color:var(--muted);font-size:13px}
 .small{font-size:13px;color:var(--muted)}
 .kicker{color:var(--muted);font-size:13px;margin-top:4px}
+
+
+/* PSU-inspired theme (approx) */
+:root{
+  --psu-green:#6b7b2a;   /* olive green similar to PSU header */
+  --psu-green-dark:#55631f;
+  --ink:#111111;
+  --muted:#555555;
+  --bg:#ffffff;
+  --card:#ffffff;
+  --border:#e6e6e6;
+  --link:#0b5a2a;
+}
+
+html, body { height: 100%; }
+body{
+  background: var(--bg) !important;
+  color: var(--ink) !important;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+               "Helvetica Neue", Arial, "Noto Sans KR", "Apple SD Gothic Neo",
+               "Malgun Gothic", sans-serif !important;
+  font-size: 15px !important;
+  line-height: 1.6 !important;
+}
+
+/* Keep layout readable */
+.container, main, .wrap{
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 24px 18px;
+}
+
+/* Top language line */
+.small{
+  font-size: 13px !important;
+}
+.small a{
+  color: #ffffff !important;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+/* Header / hero */
+header, .header, .site-header, .topbar{
+  background: var(--psu-green) !important;
+  color: #ffffff !important;
+}
+header a, .header a, .site-header a, .topbar a{
+  color:#ffffff !important;
+}
+
+/* If the page has any "badge/kicker" containers left, keep them subtle */
+.badge, .kicker{
+  display:none !important;
+}
+
+/* Links */
+a{
+  color: var(--link) !important;
+}
+a:hover{
+  color: var(--psu-green-dark) !important;
+}
+
+/* Typography sizing */
+h1{
+  font-size: 26px !important;
+  line-height: 1.2 !important;
+  margin: 0 0 10px 0;
+}
+h2{
+  font-size: 20px !important;
+  margin: 24px 0 10px 0;
+}
+h3{
+  font-size: 16px !important;
+  margin: 18px 0 8px 0;
+}
+p, li{
+  font-size: 15px !important;
+}
+
+/* Cards/sections */
+.card, section, .section, article{
+  background: var(--card) !important;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 16px 16px;
+}
+
+/* Remove dark blocks if any */
+.hero, .banner, .masthead{
+  background: var(--psu-green) !important;
+  color:#ffffff !important;
+}
+
+/* Footer */
+footer, .footer{
+  background: #ffffff !important;
+  color: var(--muted) !important;
+  border-top: 1px solid var(--border);
+  padding: 14px 18px;
+  font-size: 13px !important;
+}
