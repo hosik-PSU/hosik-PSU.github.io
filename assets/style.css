@@ -165,3 +165,29 @@ h1,h2,h3{ font-weight:400 !important; }
   border-radius: 14px !important;
   border: 1px solid var(--border) !important;
 }
+
+
+/* Fix: header subtitle readability */
+.identity .subtitle{
+  color:#ffffff !important;
+  opacity:1 !important;
+  font-weight:400 !important;
+  font-size: 13px !important;
+}
+
+/* Fix: profile photo consistent on EN/KR */
+.identity img{
+  width: 72px !important;
+  height: 72px !important;
+  object-fit: contain !important;
+  background: #ffffff !important;
+  padding: 6px !important;
+  border-radius: 14px !important;
+  border: 1px solid var(--border) !important;
+}
+
+/* Ensure main text is solid black */
+section, .card, article, .section{
+  color: var(--ink) !important;
+  opacity: 1 !important;
+}
