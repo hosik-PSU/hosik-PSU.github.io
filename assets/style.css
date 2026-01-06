@@ -1,13 +1,13 @@
-/* Wix-inspired look v2: big logo, photo overlap, green band lower, contact strip below, alternating sections */
+/* Wix-inspired look v3: bigger logo, NO language links, photo smaller and NOT overlapping logo */
 :root{
-  --psu-green:#5f7f2a;         /* close to Wix green band */
+  --psu-green:#5f7f2a;
   --psu-green-dark:#4f6b22;
-  --accent:#c05a3c;            /* section title tint seen in Wix */
+  --accent:#c05a3c;
   --text:#111;
   --muted:#4b5563;
   --bg:#ffffff;
-  --panel:#e9e6df;             /* contact strip background */
-  --altA:#d9d9d9;              /* alternating section backgrounds */
+  --panel:#e9e6df;
+  --altA:#d9d9d9;
   --altB:#efefef;
   --max: 980px;
 }
@@ -28,42 +28,25 @@ body{
   padding: 0 18px;
 }
 
-/* Top logo bar (logo larger) + language links on the right */
+/* Top logo bar (logo larger) */
 .logo-bar{
   background:#fff;
-  border-top: 4px solid #1e40ff00; /* no visible top bar, keeps structure stable */
 }
 
 .logo-row{
   display:flex;
   align-items:flex-start;
-  justify-content:space-between;
-  padding: 14px 0 6px 0;
-  gap: 16px;
+  justify-content:flex-start;
+  padding: 14px 0 10px 0;
 }
 
 .psu-logo{
-  height: 72px; /* larger than before */
+  height: 72px;
   width: auto;
   display:block;
 }
 
-.lang{
-  padding-top: 8px;
-  font-size: 12px;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-}
-
-.lang a{
-  text-decoration:none;
-  margin-left: 14px;
-  color:#111;
-}
-
-.lang a.active{ color: var(--accent); }
-
-/* Green band (starts lower than photo top) */
+/* Green band */
 .hero{
   background: var(--psu-green);
   color:#fff;
@@ -78,12 +61,12 @@ body{
   position: relative;
 }
 
-/* Photo slightly smaller, overlaps into the white logo area */
+/* Photo: 4/5 size vs previous 200px -> 160px, and NO overlap into logo area */
 .photo-card{
-  width: 200px;               /* smaller photo */
+  width: 160px;
   flex: 0 0 auto;
   position: relative;
-  margin-top: -70px;          /* overlap into white area */
+  margin-top: 0;            /* critical: prevents overlap with logo */
   border-radius: 6px;
   overflow: hidden;
   box-shadow: 0 10px 28px rgba(0,0,0,0.22);
@@ -99,7 +82,7 @@ body{
 
 .hero-text{
   flex: 1 1 auto;
-  padding-top: 18px;          /* green band sits a bit lower than photo */
+  padding-top: 18px;
 }
 
 .hero-text h1{
@@ -120,7 +103,7 @@ body{
   opacity: 0.95;
 }
 
-/* Contact strip BELOW green area (Wix-like) */
+/* Contact strip below green area */
 .contact-strip{
   background: var(--panel);
   border-bottom: 1px solid rgba(0,0,0,0.10);
@@ -154,7 +137,7 @@ body{
 a{ color: var(--psu-green-dark); }
 a:hover{ opacity: 0.9; }
 
-/* Content sections alternating like Wix */
+/* Alternating section backgrounds */
 .section{
   padding: 26px 0;
 }
@@ -176,7 +159,7 @@ a:hover{ opacity: 0.9; }
 
 .bullets li{ margin: 7px 0; }
 
-/* Education typography: avoid heavy black; make thesis italic serif */
+/* Education typography */
 .edu-item{ margin: 12px 0 16px 0; }
 
 .edu-degree{
@@ -205,9 +188,8 @@ a:hover{ opacity: 0.9; }
 }
 
 @media (max-width: 860px){
-  .logo-row{ align-items:flex-start; }
   .contact-grid{ grid-template-columns: 1fr; }
   .hero-inner{ flex-direction: column; }
-  .photo-card{ width: 190px; margin-top: -60px; }
+  .photo-card{ width: 160px; }
   .hero-text{ padding-top: 10px; }
 }
