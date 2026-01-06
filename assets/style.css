@@ -1,193 +1,108 @@
 :root{
-  --bg:#0b0f14;
-  --card:#121826;
-  --text:#e8eef6;
-  --muted:#a9b4c2;
-  --accent:#7cc4ff;
-  --line: rgba(255,255,255,.12);
-}
-*{box-sizing:border-box}
-html,body{margin:0;padding:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.5}
-a{color:var(--accent);text-decoration:none}
-a:hover{text-decoration:underline}
-.container{max-width:980px;margin:0 auto;padding:28px 18px}
-.header{
-  display:flex;gap:18px;align-items:center;justify-content:space-between;flex-wrap:wrap;
-  padding:18px 18px;border:1px solid var(--line);border-radius:16px;background:linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.02));
-}
-.identity h1{margin:0;font-size:30px;letter-spacing:.2px}
-.identity .subtitle{margin-top:6px;color:var(--muted)}
-.badge{display:inline-block;border:1px solid var(--line);padding:6px 10px;border-radius:999px;color:var(--muted);font-size:13px}
-.nav{
-  display:flex;gap:10px;flex-wrap:wrap;margin-top:12px
-}
-.nav a{
-  border:1px solid var(--line);padding:8px 10px;border-radius:10px;color:var(--text);background:rgba(255,255,255,.03);
-}
-.nav a:hover{background:rgba(255,255,255,.06)}
-.grid{display:grid;grid-template-columns:1.2fr .8fr;gap:18px;margin-top:18px}
-@media (max-width:860px){.grid{grid-template-columns:1fr}}
-.card{
-  border:1px solid var(--line);border-radius:16px;background:rgba(255,255,255,.03);
-  padding:18px;
-}
-.card h2{margin:0 0 10px 0;font-size:18px}
-.card h3{margin:14px 0 8px 0;font-size:15px;color:var(--text)}
-.card p{margin:8px 0;color:var(--text)}
-.card .muted{color:var(--muted)}
-ul{margin:8px 0 0 18px;padding:0}
-li{margin:6px 0;color:var(--text)}
-hr{border:0;border-top:1px solid var(--line);margin:14px 0}
-.footer{margin:18px 0 0 0;color:var(--muted);font-size:13px}
-.small{font-size:13px;color:var(--muted)}
-.kicker{color:var(--muted);font-size:13px;margin-top:4px}
-
-
-/* PSU-inspired theme (approx) */
-:root{
-  --psu-green:#6b7b2a;   /* olive green similar to PSU header */
-  --psu-green-dark:#55631f;
-  --ink:#111111;
-  --muted:#555555;
+  --psu-green:#6a7c2f;
+  --text:#1a1a1a;
+  --muted:#5a5a5a;
+  --muted2:#767676;
+  --line:#e5e5e5;
   --bg:#ffffff;
-  --card:#ffffff;
-  --border:#e6e6e6;
-  --link:#0b5a2a;
-
-  --text: var(--ink);
-  --line: var(--border);
-  --accent: var(--link);
+  --max: 920px;
 }
 
-html, body { height: 100%; }
+*{box-sizing:border-box}
+html,body{margin:0;padding:0;background:var(--bg);color:var(--text)}
 body{
-  background: var(--bg) !important;
-  color: var(--ink) !important;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-               "Helvetica Neue", Arial, "Noto Sans KR", "Apple SD Gothic Neo",
-               "Malgun Gothic", sans-serif !important;
-  font-size: 14px !important;
-  line-height: 1.6 !important;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,"Noto Sans",sans-serif;
+  font-size:16px;
+  line-height:1.55;
 }
+a{color:var(--psu-green);text-decoration:none}
+a:hover{text-decoration:underline}
 
-/* Keep layout readable */
-.container, main, .wrap{
-  max-width: 980px;
+.page{
+  max-width: var(--max);
   margin: 0 auto;
-  padding: 24px 18px;
+  padding: 28px 18px 48px;
 }
 
-/* Top language line */
-.small{
-  font-size: 12px !important;
-}
-.small a{
-  color: #ffffff !important;
-  text-decoration: none;
-  font-weight: 600;
+.hr{height:1px;background:var(--line);margin:18px 0}
+
+.header{
+  display:flex;
+  gap:18px;
+  align-items:flex-start;
 }
 
-/* Header / hero */
-header, .header, .site-header, .topbar{
-  background: var(--psu-green) !important;
-  color: #ffffff !important;
+.photo-wrap{
+  width:120px;
+  height:120px;
+  border:1px solid var(--line);
+  border-radius:8px;
+  background:#fff;
+  padding:10px; /* makes face look smaller */
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  overflow:hidden;
 }
-header a, .header a, .site-header a, .topbar a{
-  color:#ffffff !important;
-}
-
-/* If the page has any "badge/kicker" containers left, keep them subtle */
-.badge, .kicker{
-  display:none !important;
-}
-
-/* Links */
-a{
-  color: var(--link) !important;
-}
-a:hover{
-  color: var(--psu-green-dark) !important;
+.photo-wrap img{
+  max-width:100%;
+  max-height:100%;
+  object-fit:contain;
+  display:block;
 }
 
-/* Typography sizing */
-h1{
-  font-size: 24px !important;
-  line-height: 1.2 !important;
-  margin: 0 0 10px 0;
+.hgroup h1{
+  font-size:40px;
+  line-height:1.1;
+  margin:0 0 6px 0;
+  font-weight:650;
+  letter-spacing:-0.3px;
 }
-h2{
-  font-size: 19px !important;
-  margin: 24px 0 10px 0;
+.hgroup h2{
+  margin:0;
+  font-size:18px;
+  font-weight:600;
+  color:var(--text);
 }
-h3{
-  font-size: 15px !important;
-  margin: 18px 0 8px 0;
+.hgroup h3{
+  margin:4px 0 0 0;
+  font-size:16px;
+  font-weight:500;
+  color:var(--muted);
 }
-p, li{
-  font-size: 14px !important;
+.meta-grid{
+  margin-top:14px;
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px 22px;
 }
-
-/* Cards/sections */
-.card, section, .section, article{
-  background: var(--card) !important;
-  border: 1px solid var(--border);
-  border-radius: 10px;
-  padding: 16px 16px;
-}
-
-/* Remove dark blocks if any */
-.hero, .banner, .masthead{
-  background: var(--psu-green) !important;
-  color:#ffffff !important;
-}
-
-/* Footer */
-footer, .footer{
-  background: #ffffff !important;
-  color: var(--muted) !important;
-  border-top: 1px solid var(--border);
-  padding: 14px 18px;
-  font-size: 13px !important;
+@media (max-width: 740px){
+  .header{align-items:center}
+  .hgroup h1{font-size:34px}
+  .meta-grid{grid-template-columns:1fr}
 }
 
-/* PSU theme tweaks v2: smaller + non-bold */
-body{ font-size:14px !important; font-weight:400 !important; }
-h1,h2,h3{ font-weight:400 !important; }
-.small a{ font-weight:400 !important; }
-
-/* Profile photo: smaller, less "tight" crop */
-.header img[alt="Hosik Kim"], .site-header img[alt="Hosik Kim"]{
-  width: 72px !important;
-  height: 72px !important;
-  object-fit: contain !important;
-  background: #ffffff !important;
-  padding: 6px !important;
-  border-radius: 14px !important;
-  border: 1px solid var(--border) !important;
+.field .label{
+  font-size:12px;
+  letter-spacing:0.6px;
+  text-transform:uppercase;
+  color:var(--muted2);
+  margin-bottom:2px;
+  font-weight:650;
 }
-
-
-/* Fix: header subtitle readability */
-.identity .subtitle{
-  color:#ffffff !important;
-  opacity:1 !important;
-  font-weight:400 !important;
-  font-size: 13px !important;
+.field .value{
+  color:var(--text);
+  font-size:15px;
 }
-
-/* Fix: profile photo consistent on EN/KR */
-.identity img{
-  width: 72px !important;
-  height: 72px !important;
-  object-fit: contain !important;
-  background: #ffffff !important;
-  padding: 6px !important;
-  border-radius: 14px !important;
-  border: 1px solid var(--border) !important;
+.section-title{
+  margin:28px 0 10px;
+  font-size:22px;
+  font-weight:650;
+  letter-spacing:-0.2px;
 }
-
-/* Ensure main text is solid black */
-section, .card, article, .section{
-  color: var(--ink) !important;
-  opacity: 1 !important;
+.list{
+  margin:0;
+  padding-left:18px;
 }
+.list li{margin:6px 0}
+.small-note{color:var(--muted2);font-size:14px;margin:8px 0 0}
