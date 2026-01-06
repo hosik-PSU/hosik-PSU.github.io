@@ -8,14 +8,18 @@
   <link rel="stylesheet" href="assets/style.css" />
 </head>
 <body>
-  <!-- Top: logo only (no top navigation) -->
+  <!-- Top: PSU logo (bigger) + language links (visual only) -->
   <header class="logo-bar" role="banner">
-    <div class="wrap">
+    <div class="wrap logo-row">
       <img class="psu-logo" src="assets/psu-logo.png" alt="Portland State University" />
+      <div class="lang" aria-label="Language">
+        <a class="active" href="#">ENGLISH</a>
+        <a href="#">KOREAN</a>
+      </div>
     </div>
   </header>
 
-  <!-- Hero: photo overlaps green zone (Wix-inspired layout) -->
+  <!-- Green band: photo overlaps into logo area; ONLY name/title/department in green -->
   <section class="hero" aria-label="Profile header">
     <div class="wrap hero-inner">
       <div class="photo-card" aria-hidden="true">
@@ -25,44 +29,46 @@
       <div class="hero-text">
         <h1>Hosik Kim</h1>
         <div class="role">Research Professor, Ph.D.</div>
-
         <div class="dept">
           Department of Mechanical and Material Engineering<br/>
           Portland State University
-        </div>
-
-        <div class="hero-block">
-          <h2>Mailing Address</h2>
-          <p>
-            Department of Mechanical and Materials Engineering<br/>
-            Portland State University<br/>
-            Post Box 751<br/>
-            Portland, Oregon 97207
-          </p>
-        </div>
-
-        <div class="hero-block">
-          <h2>Office</h2>
-          <p>
-            Engineering Building<br/>
-            Portland State University<br/>
-            1930 SW 4th Avenue<br/>
-            Portland, Oregon 97201
-          </p>
-        </div>
-
-        <div class="hero-lines">
-          <div><span class="k">Phone:</span> +1 914-575-4272 (USA)</div>
-          <div class="indent">+82 10-2340-5121 (S. Korea)</div>
-          <div><span class="k">Email:</span> <a class="white-link" href="mailto:hosik@pdx.edu">hosik@pdx.edu</a></div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Content sections (text copied from the provided Wix page, without attribution text) -->
+  <!-- Contact info is NOT in the green area (Wix-style): placed below -->
+  <section class="contact-strip" aria-label="Contact summary">
+    <div class="wrap contact-grid">
+      <div class="contact-block">
+        <h2>Mailing Address</h2>
+        <p>
+          Department of Mechanical and Materials Engineering<br/>
+          Portland State University<br/>
+          Post Box 751<br/>
+          Portland, Oregon 97207
+        </p>
+
+        <h2>Office</h2>
+        <p>
+          Engineering Building<br/>
+          Portland State University<br/>
+          1930 SW 4th Avenue<br/>
+          Portland, Oregon 97201
+        </p>
+      </div>
+
+      <div class="contact-block contact-right">
+        <div class="line"><span class="k">Phone:</span> +1 914-575-4272 (USA)</div>
+        <div class="line">+82 10-2340-5121 (S. Korea)</div>
+        <div class="line"><span class="k">Email:</span> <a href="mailto:hosik@pdx.edu">hosik@pdx.edu</a></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Content sections: alternating backgrounds like Wix -->
   <main role="main">
-    <section class="section alt0" id="technical">
+    <section class="section altA" id="technical">
       <div class="wrap">
         <h2 class="section-title">Technical Specialties</h2>
         <ul class="bullets">
@@ -75,7 +81,7 @@
       </div>
     </section>
 
-    <section class="section alt1" id="interests">
+    <section class="section altB" id="interests">
       <div class="wrap">
         <h2 class="section-title">Research and Teaching Interests</h2>
         <ul class="bullets">
@@ -88,7 +94,7 @@
       </div>
     </section>
 
-    <section class="section alt0" id="education">
+    <section class="section altA" id="education">
       <div class="wrap">
         <h2 class="section-title">Education</h2>
         <div class="edu">
@@ -115,7 +121,7 @@
       </div>
     </section>
 
-    <section class="section alt1" id="experience">
+    <section class="section altB" id="experience">
       <div class="wrap">
         <h2 class="section-title">Professional Experience</h2>
         <ul class="bullets">
@@ -137,7 +143,7 @@
       </div>
     </section>
 
-    <section class="section alt0" id="papers">
+    <section class="section altA" id="papers">
       <div class="wrap">
         <h2 class="section-title">Journal &amp; Conference Papers</h2>
         <ul class="bullets">
