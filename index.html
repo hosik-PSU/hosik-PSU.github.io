@@ -1,161 +1,113 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Hosik Kim | Portland State University</title>
-  <meta name="description" content="Hosik Kim — Research Professor, Mechanical & Materials Engineering, Portland State University"/>
-  <link rel="stylesheet" href="assets/style.css"/>
+  <meta name="description" content="Hosik Kim — Research Professor, Portland State University." />
+  <link rel="stylesheet" href="assets/style.css" />
 </head>
 <body>
-  <main class="page">
-    <header class="header" aria-label="Profile header">
-      <div class="photo-wrap">
-        <img src="assets/profile.jpg" alt="Hosik Kim"/>
-      </div>
-      <div class="hgroup">
-        <h1>Hosik Kim</h1>
-        <h2>Research Professor</h2>
-        <h3>Mechanical &amp; Materials Engineering — Maseeh College of Engineering &amp; Computer Science</h3>
+  <!-- PSU-style top bar -->
+  <header class="psu-topbar" role="banner">
+    <div class="wrap psu-topbar-inner">
+      <a class="psu-brand" href="https://www.pdx.edu/" target="_blank" rel="noopener">
+        <img class="psu-logo" src="assets/psu-logo.png" alt="Portland State University" />
+      </a>
 
-        <div class="meta-grid" aria-label="Quick details">
-          <div class="field">
-            <div class="label">Office</div>
-            <div class="value">Engineering Building (EB)</div>
-          </div>
-          <div class="field">
-            <div class="label">Phone</div>
-            <div class="value"><a href="tel:+19145754272">+1 914 575 4272</a></div>
-          </div>
-          <div class="field">
-            <div class="label">Email</div>
-            <div class="value"><a href="mailto:hosik.kim@pdx.edu">hosik.kim@pdx.edu</a></div>
-          </div>
-          <div class="field">
-            <div class="label">Website</div>
-            <div class="value"><a href="https://hosik-psu.github.io/">hosik-psu.github.io</a></div>
-          </div>
+      <nav class="psu-nav" aria-label="Page">
+        <a href="#contact">Contact</a>
+        <a href="#specialties">Specialties</a>
+        <a href="#interests">Interests</a>
+        <a href="#education">Education</a>
+        <a href="#experience">Experience</a>
+        <a href="#papers">Papers</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap" role="main">
+    <!-- Identity / header block (NO contact details here by request) -->
+    <section class="identity" aria-label="Profile header">
+      <div class="avatar">
+        <!-- Keep your existing photo at assets/profile.jpg (do not upload a new one unless you want to replace it) -->
+        <img src="assets/profile.jpg" alt="Hosik Kim" />
+      </div>
+
+      <div class="identity-text">
+        <div class="titleline">Research Professor</div>
+        <h1>Hosik Kim</h1>
+        <div class="subtitle">Department / School (edit this line)</div>
+        <div class="muted">Portland State University • Portland, Oregon</div>
+      </div>
+    </section>
+
+    <!-- Content -->
+    <section id="specialties" class="card">
+      <h2>Specialties</h2>
+      <p>
+        Replace this paragraph with your specialties. Keep it concise and scannable—PSU profile pages tend to stay clean and factual.
+      </p>
+    </section>
+
+    <section id="interests" class="card">
+      <h2>Research and Teaching Interests</h2>
+      <p>
+        Replace this paragraph with your research and teaching interests.
+      </p>
+    </section>
+
+    <section id="education" class="card">
+      <h2>Education</h2>
+      <p>
+        Replace this paragraph with your education history.
+      </p>
+    </section>
+
+    <section id="experience" class="card">
+      <h2>Experience</h2>
+      <p>
+        Replace this paragraph with your career/experience summary.
+      </p>
+    </section>
+
+    <section id="papers" class="card">
+      <h2>Selected Publications and Presentations</h2>
+      <p>
+        Replace this paragraph with your selected papers/publications.
+      </p>
+    </section>
+
+    <!-- Contact stays ONLY here (bottom) -->
+    <section id="contact" class="card contact">
+      <h2>Contact</h2>
+
+      <div class="contact-grid" role="list">
+        <div class="contact-item" role="listitem">
+          <div class="label">Office</div>
+          <div class="value">[Office location]</div>
+        </div>
+
+        <div class="contact-item" role="listitem">
+          <div class="label">Phone</div>
+          <div class="value">[Phone number]</div>
+        </div>
+
+        <div class="contact-item" role="listitem">
+          <div class="label">Email</div>
+          <div class="value"><a href="mailto:YOUR_EMAIL@pdx.edu">YOUR_EMAIL@pdx.edu</a></div>
+        </div>
+
+        <div class="contact-item" role="listitem">
+          <div class="label">Website</div>
+          <div class="value"><a href="https://example.com" target="_blank" rel="noopener">https://example.com</a></div>
         </div>
       </div>
-    </header>
-
-    <div class="hr" role="separator"></div>
-
-    <section id="contact" aria-label="Contact">
-      <div class="section-title">Contact</div>
-      <h3>Mailing Address</h3>
-          <p>
-            Department of Mechanical and Materials Engineering<br/>
-            Portland State University<br/>
-            Post Box 751<br/>
-            Portland, Oregon 97207
-          </p>
-
-          <h3>Office</h3>
-          <p>
-            Engineering Building<br/>
-            Portland State University<br/>
-            1930 SW 4th Avenue<br/>
-            Portland, Oregon 97201
-          </p>
-
-          <p>
-            <strong>Phone</strong>: <a href="tel:+19145754272">+1 914 575 4272</a> (USA)<br/>
-            <strong>Phone</strong>: <a href="tel:+821023405121">+82 10 2340 5121</a> (S. Korea)
-          </p>
-          <p><strong>Email</strong>: <a href="mailto:hosik@pdx.edu">hosik@pdx.edu</a></p>
     </section>
 
-    <section id="specialties" aria-label="Technical specialties">
-      <div class="section-title">Technical Specialties</div>
-      <ul>
-            <li>Aerospace Systems Design Optimization: Fighter aircraft, Defense satellite, Rotorcraft, and UAM</li>
-            <li>Integrated Product and Process Development</li>
-            <li>Aircraft Accident Investigation</li>
-            <li>Space Engineering</li>
-            <li>Space Policy</li>
-          </ul>
-    </section>
-
-    <section id="interests" aria-label="Research and teaching interests">
-      <div class="section-title">Research &amp; Teaching Interests</div>
-      <ul>
-            <li>National Security and Space Policy</li>
-            <li>International R&amp;D Cooperation</li>
-            <li>Technology Fusion and Convergence Engineering</li>
-            <li>Aerospace Systems Design Optimization</li>
-            <li>Urban Air Mobility Systems Development</li>
-          </ul>
-    </section>
-
-    <section id="education" aria-label="Education">
-      <div class="section-title">Education</div>
-      <ul>
-            <li>
-              Georgia Institute of Technology, Ph.D. in Aerospace Engineering<br/>
-              <span class="muted">Conceptual Design Optimization for Military Helicopter Maneuverability and Agility</span>
-            </li>
-            <li>
-              Georgia Institute of Technology, M.S. in Aerospace Engineering<br/>
-              <span class="muted">Analysis of EVMCEP and Incorporation of a Root Locus Capability</span>
-            </li>
-            <li>
-              Inha University, Korea, M.S. in Aerospace Engineering<br/>
-              <span class="muted">The Study of the Aerodynamic Design and Flight Characteristics of the High Supersonic Jet Trainer</span>
-            </li>
-            <li>
-              Sungkyunkwan University, Korea, MPA in Public Administration (National Security Policy)<br/>
-              <span class="muted">The Impact of U.S.-Chinese Strengthened Military Cooperation on the Strategic Status of the Korean Peninsula</span>
-            </li>
-            <li>
-              Air Force Academy, Korea, B.S. in Aeronautical Engineering
-            </li>
-          </ul>
-    </section>
-
-    <section id="experience" aria-label="Experience">
-      <div class="section-title">Experience</div>
-      <ul>
-            <li>Portland State University. Research Professor</li>
-            <li>K425 Satellite Program Management Office at Thales Alenia Space Italia. International Joint Development Supervisor</li>
-            <li>Agency for Defense Development, Korea. Principal Researcher (Military Satellite and Fighter Aircraft Program)</li>
-            <li>Air Force Academy, Korea. Professor and Director of Administration</li>
-            <li>National Intelligence Service, Korea. Director of Defense Industry Intelligence</li>
-            <li>Office of the President, Korea. Executive Officer to the President for the National Security Strategy</li>
-            <li>National Security Council, Korea. Executive Officer to the President for the National Strategy Planning</li>
-            <li>R&amp;D Bureau, Ministry of National Defense, Korea. Aerospace and Guided Weapons Technology Analysis Officer</li>
-            <li>RMA (Revolution of Military Affairs) Group, Ministry of National Defense, Korea. Future Core Force Systems Officer</li>
-            <li>Korea Air Force Combat Development Wing. Space Weapons Systems Officer</li>
-            <li>Korea Air University. Military Theory Instructor</li>
-            <li>Korea Air Force. Retired Colonel and Pilot</li>
-            <li>FAA Commercial Pilot</li>
-            <li>Korea Commercial Pilot</li>
-          </ul>
-    </section>
-
-    <section id="papers" aria-label="Publications and presentations">
-      <div class="section-title">Selected Publications &amp; Presentations</div>
-      <ul>
-            <li>"Prospects for the Biden Administration’s Space Policy." The Korean Society for Aeronautical &amp; Space Sciences Forum. July 2021.</li>
-            <li>"U.S. National Security Strategy and Space Exploration." The Korean Society for Aeronautical &amp; Space Sciences Forum. November 2020.</li>
-            <li>"Current Status of U.S. Space Force Establishment." The Korean Society for Aeronautical &amp; Space Sciences Forum. July 2020.</li>
-            <li>"Space to Create." Thales Alenia Space Supplier Conference. October 19, 2019. Torino, Italia.</li>
-            <li>"The U.S. Space Force Creation and its Strategic Implications." The Korean Society for Aeronautical &amp; Space Sciences Forum. November 2018.</li>
-            <li>"Space Security and Space Situational Awareness." The Korean Society for Aeronautical &amp; Space Sciences Forum. November 2018.</li>
-            <li>"Status of international cooperation for the development of Korean future fighter aircraft." The Korean Society for Aeronautical &amp; Space Sciences Forum. November 2012.</li>
-            <li>“Combat Experiment Plan for Future Target Acquisition Weapons Systems.” Digital Generation’s Army Combat Experiment. Korea Research Institute for Strategy. 2002.</li>
-            <li>“Research on Russia’s Aerospace Weapons Systems.” Air Force Studies and Analysis Wing Publication. 1999.</li>
-            <li>“Artificial Satellite Monitoring System.” Air Force Studies and Analysis Wing Publication. 1999.</li>
-            <li>“Cost Risk Analysis of Aerospace System using a Combined Response Surface Methodology and Monte-Carlo Simulation.” The 7th ROK–U.S. Munitions Effectiveness Seminar. Korea Institute for Defense Analyses and U.S. Army Material Systems Analysis Activity, May 12–15, 1998. Seoul, Korea.</li>
-            <li>“Capability and Affordability Assessment of a High Speed, High Maneuverability, Rotorcraft Design Using a Combined Response Surface Methodology and Monte Carlo Simulation.” 9th International Sessions in 33rd Aircraft Symposium. November 8–10, 1995. Japan Society for Aeronautical and Space Sciences, Hiroshima, Japan.</li>
-            <li>“Selection and Design Optimization of a High Speed, High Maneuverability Rotorcraft Configuration.” 51st Annual Forum, American Helicopter Society. May 9–11, 1995. Fort Worth, Texas, USA.</li>
-            <li>“Impact of Performance Requirements on Rotorcraft Configuration Selection.” 20th European Rotorcraft Forum. October 4–7, 1994. Amsterdam, Netherlands.</li>
-            <li>"Aerodynamic Design and Prediction of Dynamic Stability of High Speed Subsonic Jet Trainer." The Korean Society for Aeronautical &amp; Space Sciences Forum. November 1990.</li>
-          </ul>
-
-          <hr/>
-    </section>
-
+    <footer class="footer" role="contentinfo">
+      <div class="muted small">© Portland State University (logo used for identification on a personal profile page).</div>
+    </footer>
   </main>
 </body>
 </html>
